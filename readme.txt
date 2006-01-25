@@ -1,10 +1,12 @@
 -> WAP Plugin For WordPress 2.0
 --------------------------------------------------
-Author	-> Lester 'GaMerZ' Chan
-Email	-> lesterch@singnet.com.sg
-Website	-> http://www.lesterchan.net/
-Demo	-> http://wap.lesterchan.net/
-Updated	-> 1st January 2006
+Author		-> Lester 'GaMerZ' Chan
+Email		-> gamerz84@hotmail.com
+Website		-> http://www.lesterchan.net/
+Demo		-> http://wap.lesterchan.net/
+Documentation	-> http://dev.wp-plugins.org/wiki/wp-wap
+Development	-> http://dev.wp-plugins.org/browser/wp-wap/
+Updated		-> 1st January 2006
 --------------------------------------------------
 
 
