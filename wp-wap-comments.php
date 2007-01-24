@@ -2,8 +2,8 @@
 /*
 +----------------------------------------------------------------+
 |																							|
-|	WordPress 2.0 Plugin: WP-Wap 2.00										|
-|	Copyright (c) 2005 Lester "GaMerZ" Chan									|
+|	WordPress 2.1 Plugin: WP-Wap 2.10										|
+|	Copyright (c) 2007 Lester "GaMerZ" Chan									|
 |																							|
 |	File Written By:																	|
 |	- Lester "GaMerZ" Chan															|
@@ -46,13 +46,13 @@ echo '<?xml version="1.0" encoding="utf-8"?'.'>';
 <wml>
 <card id="WordPress" title="<?php bloginfo_rss('name'); ?>">
 <p>Comments On <?php the_title_rss(); ?></p>
-<p>&nbsp;</p>
+<br />
 <?php if ($comments) : ?>
 	<?php foreach ($comments as $comment) : ?>
 			<p>&gt; <?php comment_author_rss() ?></p>
-			<p>&gt; <?php comment_time('d.m.Y @ H:i'); ?></p>
+			<p>&gt; <?php comment_time(get_settings('date_format').' ('.get_settings('time_format').')'); ?></p>
 			<p><?php comment_text_rss() ?></p>
-			<p>&nbsp;</p>
+			<br />
 	<?php endforeach; ?>
 <?php else : ?>
 	<?php if ('open' == $post->comment_status) : ?> 
@@ -61,7 +61,7 @@ echo '<?xml version="1.0" encoding="utf-8"?'.'>';
 		<p>Comments Are Closed.</p>
 	<?php endif; ?>
 <?php endif; ?>
-<p>&nbsp;</p>
+<br />
 <p><a href="wp-wap.php">&lt;&lt; <?php bloginfo_rss('name'); ?></a></p>
 </card>
 </wml>
