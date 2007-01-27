@@ -50,7 +50,7 @@ echo '<?xml version="1.0" encoding="utf-8"?'.'>';
 <?php if ($comments) : ?>
 	<?php foreach ($comments as $comment) : ?>
 			<p>&gt; <?php comment_author_rss() ?></p>
-			<p>&gt; <?php comment_time(get_settings('date_format').' ('.get_settings('time_format').')'); ?></p>
+			<p>&gt; <?php comment_time(get_option('date_format').' ('.get_option('time_format').')'); ?></p>
 			<p><?php comment_text_rss() ?></p>
 			<br />
 	<?php endforeach; ?>

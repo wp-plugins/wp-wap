@@ -37,7 +37,7 @@ echo '<?xml version="1.0" encoding="utf-8"?'.'>';
 <?php if(have_posts()): ?>
 	<?php while (have_posts()): the_post(); ?>
 		<p>
-			<?php the_time(get_settings('date_format').' ('.get_settings('time_format').')'); ?><br />
+			<?php the_time(get_option('date_format').' ('.get_option('time_format').')'); ?><br />
 			- <a href="<?php bloginfo('siteurl'); ?>/wp-wap.php?p=<?php the_id(); ?>"><?php the_title_rss(); ?></a>
 		</p>
 	<?php endwhile; ?>
@@ -47,7 +47,7 @@ echo '<?xml version="1.0" encoding="utf-8"?'.'>';
 	<?php if (have_posts()) : ?>
 		<?php while (have_posts()) : the_post(); ?>
 			<p>&gt; <?php the_title_rss(); ?></p>
-			<p>&gt; <?php the_time(get_settings('date_format').' ('.get_settings('time_format').')'); ?></p>
+			<p>&gt; <?php the_time(get_option('date_format').' ('.get_option('time_format').')'); ?></p>
 			<p>&gt; In <?php echo strip_tags(get_the_category_list(', ')); ?></p>
 			<p>&gt; By <?php the_author(); ?></p>
 			<p>&gt; <a href="wp-wap-comments.php?p=<?php the_ID(); ?>"><?php comments_number("No Comments", "1 Comment", "% Comments"); ?></a></p>
