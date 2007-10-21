@@ -2,7 +2,7 @@
 /*
 +----------------------------------------------------------------+
 |																							|
-|	WordPress 2.1 Plugin: WP-Wap 2.10										|
+|	WordPress 2.1 Plugin: WP-Wap 2.30										|
 |	Copyright (c) 2007 Lester "GaMerZ" Chan									|
 |																							|
 |	File Written By:																	|
@@ -11,7 +11,7 @@
 |																							|
 |	File Information:																	|
 |	- WAP Friendly Page	For Blog Comments									|
-|	- wp-wap-comments.php														|
+|	- wap-comments.php															|
 |																							|
 +----------------------------------------------------------------+
 */
@@ -62,6 +62,6 @@ echo '<?xml version="1.0" encoding="utf-8"?'.'>';
 	<?php endif; ?>
 <?php endif; ?>
 <br />
-<p><a href="wp-wap.php">&lt;&lt; <?php bloginfo_rss('name'); ?></a></p>
+<p><a href="wap.php">&lt;&lt; <?php bloginfo_rss('name'); ?></a></p>
 </card>
 </wml>

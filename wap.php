@@ -2,7 +2,7 @@
 /*
 +----------------------------------------------------------------+
 |																							|
-|	WordPress 2.1 Plugin: WP-Wap 2.10										|
+|	WordPress 2.1 Plugin: WP-Wap 2.30										|
 |	Copyright (c) 2007 Lester "GaMerZ" Chan									|
 |																							|
 |	File Written By:																	|
@@ -11,7 +11,7 @@
 |																							|
 |	File Information:																	|
 |	- WAP Friendly Page	For Blog Post											|
-|	- wp-wap.php																		|
+|	- wap.php																			|
 |																							|
 +----------------------------------------------------------------+
 */
@@ -38,7 +38,7 @@ echo '<?xml version="1.0" encoding="utf-8"?'.'>';
 	<?php while (have_posts()): the_post(); ?>
 		<p>
 			<?php the_time(get_option('date_format').' ('.get_option('time_format').')'); ?><br />
-			- <a href="<?php bloginfo('siteurl'); ?>/wp-wap.php?p=<?php the_id(); ?>"><?php the_title_rss(); ?></a>
+			- <a href="<?php bloginfo('siteurl'); ?>/wap.php?p=<?php the_id(); ?>"><?php the_title_rss(); ?></a>
 		</p>
 	<?php endwhile; ?>
 	<p><?php next_posts_link('&lt;&lt; Previous Entries') ?> | <?php previous_posts_link('Next Entries &gt;&gt;') ?></p>
@@ -50,14 +50,14 @@ echo '<?xml version="1.0" encoding="utf-8"?'.'>';
 			<p>&gt; <?php the_time(get_option('date_format').' ('.get_option('time_format').')'); ?></p>
 			<p>&gt; In <?php echo strip_tags(get_the_category_list(', ')); ?></p>
 			<p>&gt; By <?php the_author(); ?></p>
-			<p>&gt; <a href="wp-wap-comments.php?p=<?php the_ID(); ?>"><?php comments_number("No Comments", "1 Comment", "% Comments"); ?></a></p>
+			<p>&gt; <a href="wap-comments.php?p=<?php the_ID(); ?>"><?php comments_number("No Comments", "1 Comment", "% Comments"); ?></a></p>
 			<p><?php the_content_rss(); ?></p>
 		<?php endwhile; ?>
 	<?php else : ?>
 		<p>No Posts Matched Your Criteria</p>
 	<?php endif; ?>
 	<br />
-	<p><a href="wp-wap.php">&lt;&lt; <?php bloginfo_rss('name'); ?></a></p>
+	<p><a href="wap.php">&lt;&lt; <?php bloginfo_rss('name'); ?></a></p>
 <?php endif; ?>
 </card>
 </wml>
