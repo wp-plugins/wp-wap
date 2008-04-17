@@ -3,7 +3,7 @@ Contributors: GamerZ
 Donate link: http://lesterchan.net/wordpress
 Tags: wap, wp-wap, handphone, pda, wml, phone
 Requires at least: 2.1.0
-Stable tag: 2.10
+Stable tag: trunk
 
 Browse your WordPress's blog entries on a WAP enabled mobile phone.
 
