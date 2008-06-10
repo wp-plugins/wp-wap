@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP-Wap
-Plugin URI: http://lesterchan.net/portfolio/programming.php
+Plugin URI: http://lesterchan.net/portfolio/programming/php/
 Description: Browse your WordPress's blog entries on a WAP enabled mobile phone.
 Version: 2.30
 Author: Lester 'GaMerZ' Chan
