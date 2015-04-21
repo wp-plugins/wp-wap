@@ -3,7 +3,7 @@ Contributors: GamerZ
 Donate link: http://lesterchan.net/site/donation/  
 Tags: wap, wp-wap, handphone, pda, wml, phone  
 Requires at least: 2.1  
-Tested up to: 4.1  
+Tested up to: 4.2  
 Stable tag: trunk  
 
 [DEPRECATED] Browse your WordPress's blog entries on a WAP enabled mobile phone.
@@ -21,7 +21,7 @@ Browse your WordPress's blog entries on a WAP enabled mobile phone.
 * Plugin icon by [Freepik](http://www.freepik.com) from [Flaticon](http://www.flaticon.com)
 
 = Donations =
-I spent most of my free time creating, updating, maintaining and supporting these plugins, if you really love my plugins and could spare me a couple of bucks, I will really appericiate it. If not feel free to use it without any obligations.
+I spent most of my free time creating, updating, maintaining and supporting these plugins, if you really love my plugins and could spare me a couple of bucks, I will really appreciate it. If not feel free to use it without any obligations.
 
 == Changelog ==
 ###Version 2.30 (01-01-2008)
